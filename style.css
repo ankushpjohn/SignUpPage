@@ -5,24 +5,18 @@ body {
 }
 
 main {
+    --main-height: 75vh;
+    --min-height: 350px;
     background: #1d88ed;
     color: #EBF5EE;
-    ;
     font-family: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 25vh auto;
-    height: 50vh;
+    margin: 12.5vh auto;
+    height: var(--main-height);
     width: 700px;
-    min-height: 315px;
+    min-height: var(--min-height);
     border-radius: 15px;
     display: flex;
     box-shadow: 6px 4px 2px 1px #262626;
-}
-
-img {
-    height: inherit;
-    width: 300px;
-    border-radius: 15px 0 0 15px;
-
 }
 
 ul {
@@ -36,11 +30,10 @@ form {
 }
 
 button,
-input,
-select,
-textarea {
+input {
     font-family: inherit;
     font-size: 100%;
+    border-radius: 5px;
 }
 
 form li+li {
@@ -76,4 +69,73 @@ button {
 
 #contact {
     display: flex;
+}
+
+/* photo styling */
+img {
+    height: var(--main-height);
+    width: 300px;
+    border-radius: 15px 0 0 15px;
+    min-height: var(--min-height);
+}
+
+#photocredit {
+    position: relative;
+    bottom: 40px;
+    font-size: 9px;
+    text-align: right;
+    padding: 9px;
+    color: #F0F0F0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+/* tshirt buttons */
+.tshirt {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+.tshirt>label {
+    min-width: 120px;
+}
+
+.tshirt>button {
+    margin: 0;
+    margin-left: 5px;
+}
+
+.tshirt>button:focus {
+    border: solid #000 2px;
+    background-color: #fff;
+    font-weight: 600;
+    color: #000;
+}
+
+input {
+    padding: 5px;
+}
+
+input:focus {
+    background-color: #fff;
+}
+
+.input:focus-within {
+    color: #fff;
+    font-weight: 600;
+}
+
+.desc {
+    font-style: italic;
+    padding: 0px 20px 10px;
+    text-align: justify;
+}
+
+fieldset {
+    margin: 0 10px;
 }

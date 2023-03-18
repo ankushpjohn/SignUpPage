@@ -11,27 +11,48 @@
 
 <body>
     <main>
-        <img src="./tiard-schulz-BbqIr6T8O10-unsplash.jpg">
+        <div class="photo">
+            <img src="./tiard-schulz-BbqIr6T8O10-unsplash.jpg">
+            <div id="photocredit"><em>Special thanks to Secret Agent AKNEW JCEWBUIW<br>(Known to friends as photographer
+                    <a
+                        href="https://unsplash.com/pt-br/@tiard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tiard
+                        Schulz</a> on <a
+                        href="https://unsplash.com/photos/BbqIr6T8O10?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash)</a></em>
+            </div>
+        </div>
         <form>
             <h1>Sign-up!</h1>
+            <p class="desc">Uh-oh! It's an alien invasion! It's the hottest new trend! Sign yourself up now and get a
+                free t-shirt! We here from the Gorthalax Nebula pride ourselves on our insatiable bloodlust and our
+                high-quality merch.<br><br>Sign Up today! Please!</p>
             <fieldset id="contact">
                 <legend>Contact Information</legend>
                 <ul>
-                    <li>
+                    <li class="input">
                         <label for="first">First Name: </label>
-                        <input type="text" id="first">
+                        <input type="text" id="first" required>
                     </li>
-                    <li>
+                    <li class="input">
                         <label for="last">Last Name</label>
-                        <input type="text" id="last">
+                        <input type="text" id="last" required>
                     </li>
-                    <li>
+                    <li class="input">
                         <label for="email">Email: </label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" required>
                     </li>
                     <li>
                         <label for="planet">Planet: </label>
                         <input type="text" id="planet" placeholder="Earth" disabled>
+                    </li>
+                    <li>
+                        <span>
+                            <div class="tshirt">
+                                <label for="tshirt">T-shirt Size: </label>
+                                <button type="button" class="S">S</button>
+                                <button type="button" class="M">M</button>
+                                <button type="button" class="L">L</button>
+                            </div>
+                        </span>
                     </li>
                 </ul>
             </fieldset>
